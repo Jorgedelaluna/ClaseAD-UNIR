@@ -1,9 +1,12 @@
+import controller.GestorFicheros;
+
 import java.io.File;
 import java.io.IOException;
 
 public class Entrada {
 
     public static void main(String[] args) {
+
         //FILE -> fichero logico -> fisico
         // fichero logico
         // File ficheroSinPuntero = new File( pathname:"C:\Users\jdela\GitHub\ClaseAD-UNIR\T1\Fichero");
@@ -11,6 +14,10 @@ public class Entrada {
         //System.out.println(ficheroSinPuntero.getName());
         //System.out.println(ficheroSinPuntero.getParent());
         //System.out.println(ficheroSinPuntero.length());
+
+        GestorFicheros gestorFicheros = new GestorFicheros();
+        gestorFicheros.lecturaTextoPlano("src/resources/ficheros/lectura.txt");
+        gestorFicheros.lecturaTextoPlano("");
 
         // 1-> Obtener todos los nombres de los ficheros del directorio llamado directorio
         // 2-> Crear una subcarpeta en el directorio llamado directorio y crear en ella un fichero
