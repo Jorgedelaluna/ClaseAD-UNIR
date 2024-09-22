@@ -12,6 +12,13 @@ public class Entrada {
         //System.out.println(ficheroSinPuntero.getParent());
         //System.out.println(ficheroSinPuntero.length());
 
+        // 1-> Obtener todos los nombres de los ficheros del directorio llamado directorio
+        // 2-> Crear una subcarpeta en el directorio llamado directorio y crear en ella un fichero
+        //  -> Obtener todos los nombres de los ficheros del directorio llamado directorio y el subdirectorio creado
+        // 3-> Listar el nombre de todos los ficheros del SISTEMA ("C:/User" o "/Users" )
+
+        // RECURSIVIDAD
+
         // 1. Obtener todos los nombres de los ficheros del directorio llamado directorio
         File directorio = new File("src/resources/directorio");
         System.out.println("Nombre de todos los ficheros del directorio:");
